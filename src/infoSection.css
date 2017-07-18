@@ -1,0 +1,22 @@
+.input-line {
+    background-color: transparent;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid black 2px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.line-form{
+    margin: 0 -10% -10% 2%;
+}
+.line-form p{
+    padding-top: 8%;
+    margin-right: 5%;
+}
+
+#Group{
+    margin-top: 3%;
+}

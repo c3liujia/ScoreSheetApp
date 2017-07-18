@@ -1,0 +1,172 @@
+
+.team-section{
+    border-style: solid;
+    border-width: thin;
+    font-size: 80%;
+    zoom: 0.39;
+    -moz-transform: scale(0.39);
+    margin-bottom: 2%;
+}
+.team-section h1{
+    font-size: medium;
+}
+
+.team-top-section{
+    border-style: solid;
+    border-width: thin;
+}
+
+.team-bottom-section{
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+}
+
+.stats-row{
+}
+
+.stats-row h1{
+    margin-top:0;
+    margin-bottom:0;
+}
+.stats-row p{
+    text-align: center;
+    margin-bottom:0;
+}
+
+.flexed-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.top-row{
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+}
+
+.quarter-fouls {
+    display: flex;
+    flex-direction: row;
+}
+
+.marked {
+    position: relative;
+}
+.marked:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    border-top: 1px solid;
+    border-color: inherit;
+
+    -webkit-transform:rotate(-5deg);
+    -moz-transform:rotate(-5deg);
+    -ms-transform:rotate(-5deg);
+    -o-transform:rotate(-5deg);
+    transform:rotate(-5deg);
+}
+.name-col{
+    width: 13%;
+}
+
+.team-name-box {
+    width: 80%;
+    border-style: solid;
+    border-width: 0px 4px 0px 0px;
+}
+.fit-name{
+    font-size:80%;
+}
+.fit-name p{
+    margin-bottom: 0;
+}
+
+.jersey-number-col{
+    width: 4%;
+    text-align: center;
+}
+
+.participation-col{
+    width: 12%;
+}
+
+.foul-col{
+    width: 10%;
+}
+
+.quarter-col{
+    width: 14%;
+}
+
+.total-col{
+    width: 5%;
+}
+
+.timeOut {
+    width: 6%;
+    border-width: 0px 1px 0 0;
+    border-style: solid;
+}
+
+.bottom-right-section{
+    width: 94%;
+}
+.coach-section{
+    width: 50%;
+    border-style: solid;
+    border-width: thin;
+}
+
+.score-section{
+    /*width: inherit;
+    position:relative;*/
+    display: inline;
+}
+
+.marked-score{
+    position: relative;
+    display: inline-block;
+    padding-left: 5px;
+    margin-bottom: 0;
+    font-family: "Times New Roman";
+    font-size: 30px;
+}
+
+.unmarked-score{
+    display: inline-block;
+    padding-left: 5px;
+    margin-bottom:0;
+    font-family: "Times New Roman";
+    font-size: 30px;
+}
+
+.marked-score:before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: -6px;
+    border-top: 4px solid;
+    border-color: inherit;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    transform:rotate(-55deg);
+    min-width: 30px;
+}
+
+.boxes {
+    border-style: solid;
+    border-width: 0 0px 1px 1px;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.score-options{
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    position: absolute;
+}
