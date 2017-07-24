@@ -18,6 +18,7 @@ export default class TeamStat extends React.Component {
     };
       this.addScore = this.addScore.bind(this);
       this.addFoul = this.addFoul.bind(this);
+      this.changeTeamName = this.changeTeamName.bind(this);
   }
 
   changeTitle(title) {
@@ -57,6 +58,10 @@ export default class TeamStat extends React.Component {
           currentFoul += increment;
           this.setState({q4Fouls:currentFoul});
       }
+  }
+
+  changeTeamName(e){
+
   }
 
   render() {

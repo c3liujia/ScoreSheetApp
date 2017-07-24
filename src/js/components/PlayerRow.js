@@ -25,6 +25,8 @@ export default class PlayerRow extends React.Component {
       this.exitOptions = this.exitOptions.bind(this);
       this.removeScore = this.removeScore.bind(this);
       this.addFoul = this.addFoul.bind(this);
+      this.changeName = this.changeName.bind(this);
+      this.changePlayerNumber = this.changePlayerNumber.bind(this);
   }
 
   changeTitle(title) {
@@ -120,21 +122,45 @@ export default class PlayerRow extends React.Component {
       }
 
   }
+  changeName (e){
+      var event = e;
+      var target = e.target;
+      if (event.key == 'Enter'){
+          target.blur();
+      }
+      this.setState({name:target.value},() => {
+          // Do something here.
+          console.log("TODO: send name change to parent component to ", this.state.name);
+      });
+
+  }
+
+  changePlayerNumber(e){
+      var event = e;
+      var target = e.target;
+      if (event.key == 'Enter'){
+          target.blur();
+      }
+      this.setState({playerNumber:target.value},() => {
+          // Do something here.
+          console.log("TODO: send number change to parent component to ", this.state.playerNumber);
+      });
+  }
 
   componentWillMount(){
       this.setState({name:this.props.playerName})
-      this.setState({number:this.props.playerNumber})
+      this.setState({playerNumber:this.props.playerNumber})
   }
   render() {
 
       return (
       <div class="flexed-row">
           <div class="name-col top-row fit-name">
-              <p>{this.state.name}</p>
+              <input type="text" onKeyUp={this.changeName} defaultValue = {this.state.name} />
           </div>
 
           <div class="jersey-number-col top-row">
-              <p>{this.props.playerNumber}</p>
+              <input type="text" onKeyUp={this.changePlayerNumber} defaultValue = {this.state.playerNumber} />
           </div>
           <div class="participation-col top-row">
               <span class="flexed-row" style={{height: "100%"}}>

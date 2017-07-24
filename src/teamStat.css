@@ -73,7 +73,8 @@
 }
 
 .team-name-box {
-    width: 80%;
+    min-width: 70%;
+    max-width: 70%;
     border-style: solid;
     border-width: 0px 4px 0px 0px;
 }
