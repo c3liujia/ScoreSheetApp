@@ -5,18 +5,22 @@ export default class PlayerRow extends React.Component {
   constructor() {
     super();
     this.state = {
-        none:0
+        name: "Lavar"
     };
   }
 
+  changeName(){
+      console.log("Change coach name");
+  }
   render() {
       return (
          <div class="flexed-row">
-             <div class="coach-section">
-                 <p>Coach Name</p>
+             <div class="flexed-row coach-section">
+                 <p>Coach Name:</p>
+                 <input type="text" onKeyUp={this.changeName} defaultValue = {this.props.coachName} />
              </div>
              <div class="coach-section">
-                 <p>Signature</p>
+                 <p>Signature:</p>
              </div>
          </div>
       )

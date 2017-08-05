@@ -19,7 +19,9 @@ export default class PlayerRow extends React.Component {
         q2TotalScore:0,
         q3TotalScore:0,
         q4TotalScore:0,
+        totalScore: 0,
         personalFouls: 0
+
     };
       this.addQuarterScore = this.addQuarterScore.bind(this);
       this.exitOptions = this.exitOptions.bind(this);
@@ -27,6 +29,7 @@ export default class PlayerRow extends React.Component {
       this.addFoul = this.addFoul.bind(this);
       this.changeName = this.changeName.bind(this);
       this.changePlayerNumber = this.changePlayerNumber.bind(this);
+      this.addPersonalScore = this.addPersonalScore.bind(this);
   }
 
   changeTitle(title) {
@@ -41,6 +44,7 @@ export default class PlayerRow extends React.Component {
                                       clicked={this.scoreClicked}/>;
       quarterScoreArray.push(newElement);
       this.props.addTeamScore(points);
+      this.addPersonalScore(points);
       this.exitOptions(e);
   }
 
@@ -59,10 +63,18 @@ export default class PlayerRow extends React.Component {
       console.log("quarterArray ", quarterArray);
       console.log("scoreEl ", scoreEl)
       this.props.addTeamScore(-scoreEl);
+      this.addPersonalScore(-scoreEl);
   }
 
   addToScore(quarter, amount){
       this.setState({ [quarter]: amount })
+  }
+
+  addPersonalScore(amount){
+      var currentPersonalScore = this.state.totalScore;
+      currentPersonalScore += amount;
+      this.setState({totalScore: currentPersonalScore})
+      console.log("current personal score: ", this.state.totalScore)
   }
 
   getTotal(){
@@ -88,10 +100,10 @@ export default class PlayerRow extends React.Component {
           quarterArray = this.state.q4Score;
       }
       var options = {
-          "Add 2" : this.addQuarterScore.bind(this, quarterArray, 2),
-          "Add 3": this.addQuarterScore.bind(this, quarterArray, 3),
-          "Add 1": this.addQuarterScore.bind(this, quarterArray, 1),
-          "exit": this.exitOptions.bind(this),
+          "+ 2" : this.addQuarterScore.bind(this, quarterArray, 2),
+          "+ 3": this.addQuarterScore.bind(this, quarterArray, 3),
+          "+ 1": this.addQuarterScore.bind(this, quarterArray, 1),
+          "Exit": this.exitOptions.bind(this),
       }
       var eventRect = e.target.getBoundingClientRect();
       var docTop = window.pageYOffset;
@@ -206,7 +218,7 @@ export default class PlayerRow extends React.Component {
               null
           }
           <div class="total-col top-row">
-              {this.getTotal()}
+              <p class="personalScore">{this.state.totalScore}</p>
           </div>
       </div>
     );

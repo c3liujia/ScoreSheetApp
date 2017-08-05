@@ -19,7 +19,7 @@ export default class ScoreOptions extends React.Component {
       var optionsArray = [];
       var newElement;
       for (var i in options){
-          newElement = <p onClick={this.props.optionList[i]}>{i}</p>
+          newElement = <div><button class="option-button" onClick={this.props.optionList[i]}>{i}</button></div>;
           optionsArray.push(newElement);
       }
       this.setState({options:optionsArray});
@@ -55,6 +55,7 @@ export default class ScoreOptions extends React.Component {
 
     return (
         <div class="score-options" style={contentMenuStyle}>
+            <h2>Choose an option:</h2>
             {this.state.options}
         </div>
     )

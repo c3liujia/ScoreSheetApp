@@ -47,7 +47,7 @@ export default class ScoreElement extends React.Component {
   render() {
       var options = {
           "Remove" : this.thisRemoved.bind(this),
-          "exit": this.exitOptions.bind(this)
+          "Exit": this.exitOptions.bind(this)
       }
 
     return (
