@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import MarkedElement from "./MarkedElement.js";
+import FoulElement from "./FoulElement.js";
 import ScoreElement from "./ScoreElement.js";
 import ScoreOptions from "./ScoreOptions.js";
 
@@ -127,7 +128,7 @@ export default class PlayerRow extends React.Component {
       console.log(obj);
       console.log(obj.state.currentClass);
       if (obj.state.marked){
-          this.props.addTeamFoul(-1, this.props.quarter);
+          this.props.addTeamFoul(-1, obj.state.quarter);
       }
       else{
           this.props.addTeamFoul(1, this.props.quarter);
@@ -187,11 +188,16 @@ export default class PlayerRow extends React.Component {
               </span>
       </div>
           <div class="foul-col top-row flexed-row">
-              <MarkedElement content={1} defaultClass={"boxes"} clickedClass={"marked"} boxes={5} clickedAction={this.addFoul}/>
-              <MarkedElement content={2} defaultClass={"boxes"} clickedClass={"marked"} boxes={5} clickedAction={this.addFoul}/>
-              <MarkedElement content={3} defaultClass={"boxes"} clickedClass={"marked"} boxes={5} clickedAction={this.addFoul}/>
-              <MarkedElement content={4} defaultClass={"boxes"} clickedClass={"marked"} boxes={5} clickedAction={this.addFoul}/>
-              <MarkedElement content={5} defaultClass={"boxes"} clickedClass={"marked"} boxes={5} clickedAction={this.addFoul}/>
+              <FoulElement content={1} defaultClass={"boxes"} clickedClass={"marked-foul"}
+                           boxes={5} clickedAction={this.addFoul} quarter={this.props.quarter}/>
+              <FoulElement content={2} defaultClass={"boxes"} clickedClass={"marked-foul"}
+                           boxes={5} clickedAction={this.addFoul} quarter={this.props.quarter}/>
+              <FoulElement content={3} defaultClass={"boxes"} clickedClass={"marked-foul"}
+                           boxes={5} clickedAction={this.addFoul} quarter={this.props.quarter}/>
+              <FoulElement content={4} defaultClass={"boxes"} clickedClass={"marked-foul"}
+                           boxes={5} clickedAction={this.addFoul} quarter={this.props.quarter}/>
+              <FoulElement content={5} defaultClass={"boxes"} clickedClass={"marked-foul"}
+                           boxes={5} clickedAction={this.addFoul} quarter={this.props.quarter}/>
           </div>
           <div class="quarter-col top-row" onClick={this.quarterClicked.bind(this, 1)}>
               <div class="flexed-row">
