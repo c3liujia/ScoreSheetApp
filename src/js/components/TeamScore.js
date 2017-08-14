@@ -14,12 +14,12 @@ export default class PlayerRow extends React.Component {
 
       for (var i=1; i <= this.props.score; i++) {
           markedEls.push(<MarkedElement content={i} defaultClass={"marked-score"}
-                                        clickedClass={"marked-score"} clickedAction={null}/>
+                                        clickedClass={"marked-score"} clickedAction={()=>{}}/>
           );
       }
       for (var i=this.props.score+1; i <= 130; i++) {
           unmarkedEls.push(<MarkedElement content={i} defaultClass={"unmarked-score"}
-                                          clickedClass={"marked-score"} clickedAction={null}/>
+                                          clickedClass={"marked-score"} clickedAction={()=>{}}/>
           );
       }
       return (

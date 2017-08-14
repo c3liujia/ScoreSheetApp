@@ -48,25 +48,36 @@
 .quarter-fouls {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.quarter-fouls span {
+    padding-right: 5px;
 }
 
 .marked {
     position: relative;
+    border-style: solid;
+    border-width: 0 0px 1px 1px;
+    text-align: center;
+    margin: 0 0 0 0;
 }
 .marked:before {
     position: absolute;
     content: "";
-    left: 0;
-    top: 50%;
+    left: 10px;
+    top: 45%;
     right: 0;
-    border-top: 1px solid;
+    border-top: 2px solid;
     border-color: inherit;
+    width: 70%;
 
-    -webkit-transform:rotate(-5deg);
-    -moz-transform:rotate(-5deg);
-    -ms-transform:rotate(-5deg);
-    -o-transform:rotate(-5deg);
-    transform:rotate(-5deg);
+    -webkit-transform:rotate(-25deg);
+    -moz-transform:rotate(-25deg);
+    -ms-transform:rotate(-25deg);
+    -o-transform:rotate(-25deg);
+    transform:rotate(-25deg);
 }
 .name-col{
     width: 13%;
@@ -224,9 +235,30 @@
 
 .marked-foul{
     background-color: darkgray;
+    border-bottom: 0.5px solid black;
     color: white;
     font-size: 25px;
     margin-bottom: 0px;
     text-align: center;
     font-family: Impact;
+}
+
+.marked-team-foul {
+    position: relative;
+}
+
+.marked-team-foul:before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 50%;
+    right: 0;
+    border-top: 2px solid;
+    border-color: inherit;
+
+    -webkit-transform:rotate(-25deg);
+    -moz-transform:rotate(-25deg);
+    -ms-transform:rotate(-25deg);
+    -o-transform:rotate(-25deg);
+    transform:rotate(-25deg);
 }

@@ -16,18 +16,18 @@ export default class PlayerRow extends React.Component {
                  <p>Time Outs</p>
              </div>
              <div class="flexed-row" style={{height:"25%"}}>
-                 <MarkedElement content={1} defaultClass={"boxes"} clickedClass={"marked"} boxes={2} clickedAction={null}/>
-                 <MarkedElement content={2} defaultClass={"boxes"} clickedClass={"marked"} boxes={2} clickedAction={null}/>
+                 <MarkedElement content={1} defaultClass={"boxes"} clickedClass={"marked"} boxes={2} clickedAction={()=>{}}/>
+                 <MarkedElement content={2} defaultClass={"boxes"} clickedClass={"marked"} boxes={2} clickedAction={()=>{}}/>
              </div>
              <div class="flexed-row" style={{height:"25%"}}>
-                <MarkedElement content={1} defaultClass={"boxes"} clickedClass={"marked"} boxes={3} clickedAction={null}/>
-                <MarkedElement content={2} defaultClass={"boxes"} clickedClass={"marked"} boxes={3} clickedAction={null}/>
-                <MarkedElement content={3} defaultClass={"boxes"} clickedClass={"marked"} boxes={3} clickedAction={null}/>
+                <MarkedElement content={1} defaultClass={"boxes"} clickedClass={"marked"} boxes={3} clickedAction={()=>{}}/>
+                <MarkedElement content={2} defaultClass={"boxes"} clickedClass={"marked"} boxes={3} clickedAction={()=>{}}/>
+                <MarkedElement content={3} defaultClass={"boxes"} clickedClass={"marked"} boxes={3} clickedAction={()=>{}}/>
             </div>
              <div class="flexed-row" style={{height:"26%"}}>
-                 <MarkedElement content={""} defaultClass={"boxes"} clickedClass={"marked"} boxes={3} clickedAction={null}/>
-                 <MarkedElement content={""} defaultClass={"boxes"} clickedClass={"marked"} boxes={3} clickedAction={null}/>
-                 <MarkedElement content={""} defaultClass={"boxes"} clickedClass={"marked"} boxes={3} clickedAction={null}/>
+                 <MarkedElement content={""} defaultClass={"boxes"} clickedClass={"marked"} boxes={3} clickedAction={()=>{}}/>
+                 <MarkedElement content={""} defaultClass={"boxes"} clickedClass={"marked"} boxes={3} clickedAction={()=>{}}/>
+                 <MarkedElement content={""} defaultClass={"boxes"} clickedClass={"marked"} boxes={3} clickedAction={()=>{}}/>
              </div>
          </div>
       )

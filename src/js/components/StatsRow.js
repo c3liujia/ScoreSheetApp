@@ -70,19 +70,19 @@ export default class StatsRow extends React.Component {
           </div>
           <div class="quarter-col top-row">
               <p>Quarter 1</p>
-              <div class="quarter-fouls">Fouls: <FoulCount foulCount = {this.props.q1Fouls}/></div>
+              <div class="quarter-fouls"><span>Fouls: </span><FoulCount foulCount = {this.props.q1Fouls}/></div>
           </div>
           <div class="quarter-col top-row">
               <p>Quarter 2</p>
-              <div class="quarter-fouls">Fouls: <FoulCount foulCount = {this.props.q2Fouls}/></div>
+              <div class="quarter-fouls"><span>Fouls: </span><FoulCount foulCount = {this.props.q2Fouls}/></div>
           </div>
           <div class="quarter-col top-row">
               <p>Quarter 3</p>
-              <div class="quarter-fouls">Fouls: <FoulCount foulCount = {this.props.q3Fouls}/></div>
+              <div class="quarter-fouls"><span>Fouls: </span><FoulCount foulCount = {this.props.q3Fouls}/></div>
           </div>
           <div class="quarter-col top-row">
               <p>Quarter 4</p>
-              <div class="quarter-fouls">Fouls: <FoulCount foulCount = {this.props.q4Fouls}/></div>
+              <div class="quarter-fouls"><span>Fouls: </span><FoulCount foulCount = {this.props.q4Fouls}/></div>
           </div>
           <div class="total-col top-row">
               <p>Total</p>

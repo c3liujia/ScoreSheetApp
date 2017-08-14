@@ -17,7 +17,7 @@ export default class FoulCount extends React.Component {
       var unmarked =[];
       for (var i = 1; i <= this.props.foulCount; i++) {
           if (i < 5) {
-              marked.push(<span class="marked">{i}</span>);
+              marked.push(<span class="marked-team-foul">{i}</span>);
           }
       }
       for (var j = this.props.foulCount+1; j < 5; j++) {
