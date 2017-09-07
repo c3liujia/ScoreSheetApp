@@ -73,29 +73,29 @@ export default class TeamStat extends React.Component {
                         q2Fouls={this.state.q2Fouls}
                         q3Fouls={this.state.q3Fouls}
                         q4Fouls={this.state.q4Fouls}/>
-              <PlayerRow playerName={"Really Long Name This one"} playerNumber="1"
+              <PlayerRow playerName={""} playerNumber=""
                          addTeamScore={this.addScore} addTeamFoul={this.addFoul} quarter={this.props.quarter}/>
-              <PlayerRow playerName={"John Doe"} playerNumber="1"
+              <PlayerRow playerName={""} playerNumber=""
                          addTeamScore={this.addScore} addTeamFoul={this.addFoul} quarter={this.props.quarter}/>
-              <PlayerRow playerName={"John Doe"} playerNumber="1"
+              <PlayerRow playerName={""} playerNumber=""
                          addTeamScore={this.addScore} addTeamFoul={this.addFoul} quarter={this.props.quarter}/>
-              <PlayerRow playerName={"John Doe"} playerNumber="1"
+              <PlayerRow playerName={""} playerNumber=""
                          addTeamScore={this.addScore} addTeamFoul={this.addFoul} quarter={this.props.quarter}/>
-              <PlayerRow playerName={"John Doe"} playerNumber="1"
+              <PlayerRow playerName={""} playerNumber=""
                          addTeamScore={this.addScore} addTeamFoul={this.addFoul} quarter={this.props.quarter}/>
-              <PlayerRow playerName={"John Doe"} playerNumber="1"
+              <PlayerRow playerName={""} playerNumber=""
                          addTeamScore={this.addScore} addTeamFoul={this.addFoul} quarter={this.props.quarter}/>
-              <PlayerRow playerName={"John Doe"} playerNumber="1"
+              <PlayerRow playerName={""} playerNumber=""
                          addTeamScore={this.addScore} addTeamFoul={this.addFoul} quarter={this.props.quarter}/>
-              <PlayerRow playerName={"John Doe"} playerNumber="1"
+              <PlayerRow playerName={""} playerNumber=""
                          addTeamScore={this.addScore} addTeamFoul={this.addFoul} quarter={this.props.quarter}/>
-              <PlayerRow playerName={"John Doe"} playerNumber="1"
+              <PlayerRow playerName={""} playerNumber=""
                          addTeamScore={this.addScore} addTeamFoul={this.addFoul} quarter={this.props.quarter}/>
-              <PlayerRow playerName={"John Doe"} playerNumber="1"
+              <PlayerRow playerName={""} playerNumber=""
                          addTeamScore={this.addScore} addTeamFoul={this.addFoul} quarter={this.props.quarter}/>
-              <PlayerRow playerName={"John Doe"} playerNumber="1"
+              <PlayerRow playerName={""} playerNumber=""
                          addTeamScore={this.addScore} addTeamFoul={this.addFoul} quarter={this.props.quarter}/>
-              <PlayerRow playerName={"John Doe"} playerNumber="1"
+              <PlayerRow playerName={""} playerNumber=""
                          addTeamScore={this.addScore} addTeamFoul={this.addFoul} quarter={this.props.quarter}/>
               <PlayerRow playerName={""} playerNumber=""
                          addTeamScore={this.addScore} addTeamFoul={this.addFoul} quarter={this.props.quarter}/>

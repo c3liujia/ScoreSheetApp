@@ -3,9 +3,9 @@
     border-style: solid;
     border-width: thin;
     font-size: 80%;
-    zoom: 0.39;
+    zoom: 0.35;
     -moz-transform: scale(0.39);
-    margin-bottom: 2%;
+    margin-bottom: 0%;
 }
 .team-section h1{
     font-size: medium;
@@ -20,9 +20,6 @@
     border-style: solid;
     border-width: thin;
     border-color: black;
-}
-
-.stats-row{
 }
 
 .stats-row h1{
@@ -261,4 +258,28 @@
     -ms-transform:rotate(-25deg);
     -o-transform:rotate(-25deg);
     transform:rotate(-25deg);
+}
+
+
+@media print
+{
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+
+    .marked-foul, marked-foul * {
+        background-color: black !important;
+        border-bottom: 0.5px solid black !important;
+        color: white !important;
+        font-size: 25px !important;
+        margin-bottom: 0px !important;
+        text-align: center !important;
+        font-family: Impact !important;
+    }
+}
+
+#empty-space {
+    min-height: 10px;
+    border-left: solid;
 }

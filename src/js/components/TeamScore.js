@@ -17,7 +17,7 @@ export default class PlayerRow extends React.Component {
                                         clickedClass={"marked-score"} clickedAction={()=>{}}/>
           );
       }
-      for (var i=this.props.score+1; i <= 130; i++) {
+      for (var i=this.props.score+1; i <= 143; i++) {
           unmarkedEls.push(<MarkedElement content={i} defaultClass={"unmarked-score"}
                                           clickedClass={"marked-score"} clickedAction={()=>{}}/>
           );

@@ -29,15 +29,15 @@ export default class Layout extends React.Component {
       <div id="sheet">
         <div id="score-section">
           <div id="logo">
-            Logo here
+            <img src="media/logo.png" alt="Organization logo"/>
           </div>
-          <TeamStat section="Team A" teamName="Mumba" quarter={this.state.quarter}/>
-          <TeamStat section="Team B" teamName="Silver Knights Basketballllll Cluubbbbbbbbbbbbb"
-                    quarter={this.state.quarter}/>
+          <TeamStat section="Team A" teamName="" quarter={this.state.quarter}/>
+            <div id="empty-space"/>
+          <TeamStat section="Team B" teamName="" quarter={this.state.quarter}/>
         </div>
         <div id="info-section">
-          <div id="LogoImage">
-            <h1>LOGO IMAGE HERE</h1>
+          <div id="Logo-image">
+              <img src="media/logo.png" alt="Organization logo"/>
           </div>
           <div id="Host">
             <div class="line-form flexed-row">
@@ -53,7 +53,7 @@ export default class Layout extends React.Component {
               <input type="text" class="input-line" />
             </div>
             <div class="line-form flexed-row">
-              <p>Gym: </p>
+              <p>Location: </p>
               <input type="text" class="input-line" />
             </div>
           </div>
@@ -63,8 +63,43 @@ export default class Layout extends React.Component {
                     <input type="text" class="input-line" />
                 </div>
             </div>
+            <div id="Officials">
+                <div class="line-form">
+                    <p>Official #1: </p>
+                    <div class="flexed-row">
+                        <span>Name:</span><input type="text" class="input-line" />
+                    </div>
+                    <div class="flexed-row">
+                        <span>No.:</span><input type="text" class="input-line" />
+                    </div>
+                </div>
+                <div class="line-form">
+                    <p>Official #2: </p>
+                    <div class="flexed-row">
+                        <span>Name:</span><input type="text" class="input-line" />
+                    </div>
+                    <div class="flexed-row">
+                        <span>No.:</span><input type="text" class="input-line" />
+                    </div>
+                </div>
+                <div class="line-form">
+                    <p>Official #3: </p>
+                    <div class="flexed-row">
+                        <span>Name:</span><input type="text" class="input-line" />
+                    </div>
+                    <div class="flexed-row">
+                        <span>No.:</span><input type="text" class="input-line" />
+                    </div>
+                </div>
+            </div>
+            <div id="Notes">
+                <div class="line-form">
+                    <h3>Notes:</h3>
+                    <textarea autoFocus rows="8"></textarea>
+                </div>
+            </div>
         </div>
-          <div id="setQuarter" class="flexed-row">
+          <div id="setQuarter" class="flexed-row no-print">
               <div class="flex-column">
                   <p>Quarter</p>
                   <h2>{this.state.quarter}</h2>

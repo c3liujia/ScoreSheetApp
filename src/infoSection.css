@@ -1,3 +1,7 @@
+#info-section p {
+    width: 35%;
+}
+
 .input-line {
     background-color: transparent;
     outline: none;
@@ -9,8 +13,14 @@
     margin-bottom: 10px;
 }
 
+#Logo-image img{
+    width: 70px;
+    height: 70px;
+    margin: 0 0 5px 40%;
+}
 .line-form{
-    margin: 0 -10% -10% 2%;
+    margin: 1% 2% -10% 5%;
+    zoom: 0.9;
 }
 .line-form p{
     padding-top: 8%;
@@ -20,3 +30,55 @@
 #Group{
     margin-top: 3%;
 }
+
+#Officials{
+    margin-top: 30px;
+}
+
+#Officials span{
+    padding-top: 5%;
+    margin-right: 2px;
+    width: 30%;
+}
+
+#Officials p{
+    margin-bottom: 0px;
+}
+
+#Officials .line-form{
+    margin-bottom: 0px;
+}
+
+#Officials .flexed-row{
+    margin-bottom: -15px;
+}
+#Notes{
+    margin-top: 20%;
+    margin-bottom: -10%;
+}
+#Notes h3{
+    margin-bottom: 1%;
+}
+#Notes textarea{
+    background-attachment: local;
+    background-image:
+            linear-gradient(to right, white 10px, transparent 10px),
+            linear-gradient(to left, white 10px, transparent 10px),
+            repeating-linear-gradient(white, white 30px, black 30px, #ccc 31px, white 31px);
+    line-height: 31px;
+    padding: 8px 10px;
+    border: 0px solid transparent;
+    resize: none;
+    padding-top: 0%;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 11px;
+}
+#Notes textarea:focus{
+    border: 0 none #FFF;
+    overflow: hidden;
+    outline:none;
+}
+
