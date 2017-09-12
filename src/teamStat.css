@@ -97,6 +97,9 @@
     width: 4%;
     text-align: center;
 }
+.jersey-number-col input{
+    text-align: center;
+}
 
 .participation-col{
     width: 12%;
@@ -108,6 +111,9 @@
 
 .quarter-col{
     width: 14%;
+}
+.quarter-col p{
+    margin: 0 0 0 0;
 }
 
 .total-col{
