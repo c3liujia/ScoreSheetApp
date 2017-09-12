@@ -2,13 +2,13 @@
 .team-section{
     border-style: solid;
     border-width: thin;
-    font-size: 80%;
+    font-size: 4vh;
     zoom: 0.35;
     -moz-transform: scale(0.39);
     margin-bottom: 0%;
 }
 .team-section h1{
-    font-size: medium;
+    font-weight: bold;
 }
 
 .team-top-section{
@@ -129,13 +129,14 @@
     border-width: thin;
 }
 .coach-section p {
-    width: 200px;
+    flex: 0 0 auto;
 }
 
 .score-section{
     /*width: inherit;
     position:relative;*/
     display: inline;
+    font-size: 4vh;
 }
 
 .marked-score{
@@ -144,7 +145,6 @@
     padding-left: 5px;
     margin-bottom: 0;
     font-family: "Times New Roman";
-    font-size: 30px;
 }
 
 .unmarked-score{
@@ -152,7 +152,6 @@
     padding-left: 5px;
     margin-bottom:0;
     font-family: "Times New Roman";
-    font-size: 30px;
 }
 
 .marked-score:before {

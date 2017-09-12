@@ -55,6 +55,7 @@
 #Notes{
     margin-top: 20%;
     margin-bottom: -10%;
+    max-height: 10%;
 }
 #Notes h3{
     margin-bottom: 1%;
@@ -75,6 +76,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 11px;
+    height: 30vh;
 }
 #Notes textarea:focus{
     border: 0 none #FFF;

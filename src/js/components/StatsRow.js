@@ -8,7 +8,7 @@ export default class StatsRow extends React.Component {
     this.changeTeamName = this.changeTeamName.bind(this);
     this.changeTeamColor = this.changeTeamColor.bind(this);
     this.state = {
-        teamId: "Team A",
+        teamSection: "Team A",
         teamNameObj : null,
         teamColorObj : null
     };
@@ -16,6 +16,7 @@ export default class StatsRow extends React.Component {
   }
 
   componentWillMount(){
+      this.setState({teamSection : this.props.teamSection});
       this.setState({teamNameObj : <div contentEditable="true"> {this.props.teamName} </div>})
       this.setState({teamColorObj : <input class="input-color" type="text" onKeyUp={this.changeTeamColor} defaultValue = {this.props.teamColor} />})
 }
@@ -47,7 +48,7 @@ export default class StatsRow extends React.Component {
       <div class="stats-row flexed-row">
           <div class="name-col top-row flexed-row">
               <div class="team-name-box">
-                  <h1>{this.state.teamId}</h1>
+                  <h1>{this.state.teamSection}</h1>
                   {this.state.teamNameObj}
               </div>
               <div class="flex-column">

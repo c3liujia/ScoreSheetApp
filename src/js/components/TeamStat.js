@@ -9,7 +9,7 @@ export default class TeamStat extends React.Component {
   constructor() {
     super();
     this.state = {
-        teamName: "Welcome",
+        teamName: "",
         score: 0,
         q1Fouls: 0,
         q2Fouls: 0,
@@ -69,6 +69,7 @@ export default class TeamStat extends React.Component {
       <div class="team-section">
           <div class = "team-top-section">
               <StatsRow teamName={this.props.teamName}
+                        teamSection={this.props.section}
                         q1Fouls={this.state.q1Fouls}
                         q2Fouls={this.state.q2Fouls}
                         q3Fouls={this.state.q3Fouls}
