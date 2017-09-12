@@ -98,6 +98,9 @@ export default class Layout extends React.Component {
                     <textarea autoFocus rows="8"></textarea>
                 </div>
             </div>
+            <div id="Help">
+                <a href="https://github.com/c3liujia/ScoreSheetApp" target="_blank">Help?</a>
+            </div>
         </div>
           <div id="setQuarter" class="flexed-row no-print">
               <div class="flex-column">
