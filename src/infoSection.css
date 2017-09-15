@@ -9,13 +9,13 @@
     border-left: none;
     border-right: none;
     border-bottom: solid black 2px;
-    padding-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 1.3vh;
+    margin-bottom: 1vh;
 }
 
 #Logo-image img{
-    width: 70px;
-    height: 70px;
+    width: 40%;
+    height: 40%;
     margin: 0 0 5px 40%;
 }
 .line-form{
@@ -50,7 +50,7 @@
 }
 
 #Officials .flexed-row{
-    margin-bottom: -15px;
+    margin-bottom: -2vh;
 }
 #Notes{
     max-height: 35vh;
@@ -64,8 +64,8 @@
             linear-gradient(to right, white 10px, transparent 10px),
             linear-gradient(to left, white 10px, transparent 10px),
             repeating-linear-gradient(white, white 30px, black 30px, #ccc 31px, white 31px);
-    line-height: 31px;
-    padding: 8px 10px;
+    line-height: 4.5vh;
+    padding: 1vh 1vw;
     border: 0px solid transparent;
     resize: none;
     padding-top: 0%;
@@ -73,7 +73,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-size: 11px;
+    font-size: 2vh;
     height: 30vh;
 }
 #Notes textarea:focus{
@@ -90,4 +90,11 @@
 
 #Help a{
     color: lightgrey;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    #Notes textarea{ 
+        font-size: 14px;
+        line-height: 32px;
+    }
 }

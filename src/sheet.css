@@ -1,4 +1,4 @@
-#sheet{
+ #sheet{
     min-height: 80%;
     min-width: 99%;
     display: flex;
@@ -15,8 +15,8 @@
 }
 
 #logo img{
-    width: 90px;
-    height: 90px;
+    width: 10%;
+    height: 10%;
     margin: 0 0 5px 45%;
 }
 #score-section{
@@ -70,13 +70,6 @@ input:focus {
 }
 
 .input-color{
-    font-size: 40px;
-    margin-top: 15px;
-}
-div[contenteditable]{
-    border: 0px solid black;
-    max-height: 90px;
-    min-height: 90px;
-    word-wrap: break-word;
-    overflow: scroll;
+    font-size: 6vh !important;
+    margin-top: 2vh;
 }

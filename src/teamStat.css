@@ -22,6 +22,10 @@
     border-color: black;
 }
 
+.stats-row .top-row{
+    height: 21vh !important;
+}
+
 .stats-row h1{
     margin-top:0;
     margin-bottom:0;
@@ -40,17 +44,18 @@
     border-style: solid;
     border-width: thin;
     border-color: black;
+    height: 7vh;
 }
 
 .quarter-fouls {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 2.5vh;
 }
 
 .quarter-fouls span {
-    padding-right: 5px;
+    padding-right: 1vh;
 }
 
 .marked {
@@ -63,10 +68,10 @@
 .marked:before {
     position: absolute;
     content: "";
-    left: 10px;
+    left: 0.5vw;
     top: 45%;
     right: 0;
-    border-top: 2px solid;
+    border-top: 0.5vw solid;
     border-color: inherit;
     width: 70%;
 
@@ -78,6 +83,10 @@
 }
 .name-col{
     width: 13%;
+}
+
+.name-col input{
+    font-size: 4vh;
 }
 
 .team-name-box {
@@ -148,23 +157,25 @@
 .marked-score{
     position: relative;
     display: inline-block;
-    padding-left: 5px;
+    padding-left: 0.4vw;
     margin-bottom: 0;
     font-family: "Times New Roman";
+    font-size: 4vh;
 }
 
 .unmarked-score{
     display: inline-block;
-    padding-left: 5px;
+    padding-left: 0.4vw;
     margin-bottom:0;
     font-family: "Times New Roman";
+    font-size: 4vmin;
 }
 
 .marked-score:before {
     position: absolute;
     content: "";
     top: 50%;
-    right: -6px;
+    right: -0.7vw;
     border-top: 4px solid;
     border-color: inherit;
     -webkit-transform:rotate(-45deg);
@@ -172,7 +183,7 @@
     -ms-transform:rotate(-45deg);
     -o-transform:rotate(-45deg);
     transform:rotate(-55deg);
-    min-width: 30px;
+    min-width: 4.5vh;
 }
 
 .boxes {
@@ -180,6 +191,8 @@
     border-width: 0 0px 1px 1px;
     text-align: center;
     margin: 0 0 0 0;
+    font-size: 4vh;
+    height: 100%
 }
 
 .score-options{
@@ -188,11 +201,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 25px;
+    border-radius: 5vw;
     border: 2px solid #73AD21;
-    padding: 0px 20px 20px 20px;
-    width: 400px;
-    height: 350px;
+    padding: 0px 2vw 2vh 2vw;
+    width: 50vw;
+    height: 70vh;
     background-color: ghostwhite;
 }
 
@@ -201,22 +214,6 @@
     color: green;
     justify-content: center;
     font-weight: bold;
-}
-
-.score-options button{
-    padding: 10px 40px;
-    background: yellow;
-    width: 300px;
-    border-radius: 25px;
-    margin-top: 5px;
-    box-shadow: 0 9px #999;
-    font-size: 25px;
-    color:green;
-    text-shadow:
-            -1px -1px 0 green,
-            1px -1px 0 green,
-            -1px 1px 0 green,
-            1px 1px 0 green;
 }
 
 .score-options button:active {
@@ -229,17 +226,35 @@
             -1px 1px 0 #000,
             1px 1px 0 #000;
 }
+
+.option-button{
+    padding: 10px 40px;
+    background: yellow;
+    width: 30vw;
+    height: 20%;
+    border-radius: 25px;
+    margin-top: 0.7vw;
+    box-shadow: 0 9px #999;
+    font-size: 30px;
+    color:green;
+    text-shadow:
+            -1px -1px 0 green,
+            1px -1px 0 green,
+            -1px 1px 0 green,
+            1px 1px 0 green;
+}
 .personalScore {
-    font-size: 15px;
+    font-size: 4.1vh;
     text-align: center;
     font-weight: bold;
+    margin: 0 0 0 0;
 }
 
 .marked-foul{
     background-color: darkgray;
     border-bottom: 0.5px solid black;
     color: white;
-    font-size: 25px;
+    font-size: 4vh;
     margin-bottom: 0px;
     text-align: center;
     font-family: Impact;
@@ -285,6 +300,85 @@
 }
 
 #empty-space {
-    min-height: 10px;
+    min-height: 2vh;
     border-left: solid;
+}
+
+
+div[contenteditable]{
+    border: 0px solid black;
+    height: 15vh;
+    word-wrap: break-word;
+    overflow: auto;
+    font-size: 5vh;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .coach-section{
+        height: 10px;
+    }
+    .coach-section input{
+        font-size: 8px
+    }
+    .team-name-box h1{
+        font-size: 14px;
+    }
+    .fit-name{
+        background: red;
+        padding-top: 0px;
+        display: flex;
+    }
+    .name-col input{
+        font-size: 8px;
+        height: 100%
+    }
+    .jersey-number-col input{
+        font-size: 10px;
+    }
+    .stats-row b{
+        font-size: 12px
+    }
+    .input-color{
+        font-size: 9px !important;
+    }
+    .unmarked-score {
+        font-size: 10px
+    }
+    .marked-score {
+        font-size: 10px
+    }
+    .personalScore {
+        font-size: 11px;
+    }
+    .total-col{
+        padding-bottom: 5px;
+    }
+    .marked-foul{
+        font-size: 12px;
+    }
+    .bottom-right-section .coach-section{
+        min-height: 40px;
+    }
+    .timeOut .flexed-row .boxes{
+        min-height: 40px;
+    }
+    .score-options{
+        position: fixed !important;
+        top: 500px !important;
+        left: 800px !important;
+        width: 1200px;
+        height: 800px;
+    }
+    .score-options button {
+        min-width: 500px !important;
+    }
+    div[contenteditable]{
+        border: 1px solid black;
+        height: 14vh;
+        font-size: 12px;
+    }
+    #empty-space {
+    min-height: 5px;
+    border-left: solid;
+    }
 }
